@@ -44,7 +44,7 @@ function makeVisible() {
   var found = document.getElementsByClassName('invisible');
 
   // apply a new class to elements found:
-  // found[0].className.replace('invisible', 'visible');
-  found[0].classList.add('visible');
+  found[0].className = found[0].className.replace("invisible", "visible");
+  // found[0].classList.add('visible');
 
 }
